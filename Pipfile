@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pydantic = {version = "*", extras = ['email'] }
+requests = "*"
+pytest = "*"
+python-multipart = "*"
+python-jose = {version = "*", extras = ['cryptography'] }
+passlib = {version = "*", extras = ['bcrypt'] }
+sqlalchemy = "*"
+sqlalchemy-utils = "*"
+loguru = "*"
+
+[dev-packages]
+mypy = "*"
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
